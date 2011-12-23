@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+		<pkgmetadata>
+			<maintainer>
+				<email>cpglsn@ymail.com</email>
+				<name>Alessandro Capogna</name>
+			</maintainer>
+			<longdescription lang="en">
+				Removes the headache of applications matching into a simple DBus 
+				daemon and c wrapper library. Currently features application matching 
+				at amazing levels of accuracy (covering nearly every corner case).
+			</longdescription>
+			<use>
+				<flag name="gtk3">Use GTK+3 instead of 2</flag>
+			</use>
+</pkgmetadata>
