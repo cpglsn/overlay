@@ -11,6 +11,7 @@
 				at amazing levels of accuracy (covering nearly every corner case).
 			</longdescription>
 			<use>
-				<flag name="gtk3">Use GTK+3 instead of 2</flag>
+				<flag name="gtk3">Use GTK+3 instead of GTK+2</flag>
+            <flag name="introspection">Use dev-libs/gobject-introspection for introspection</flag>
 			</use>
 </pkgmetadata>

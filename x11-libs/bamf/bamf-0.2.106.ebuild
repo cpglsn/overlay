@@ -9,10 +9,10 @@ inherit autotools autotools-utils
 DESCRIPTION="BAMF Application Matching Framework"
 SRC_URI="http://launchpad.net/${PN}/0.2/${PV}/+download/${P}.tar.gz"
 HOMEPAGE="https://launchpad.net/bamf"
-KEYWORDS="~amd64 ~x86"
-SLOT="3"
+KEYWORDS="amd64 ~x86"
+SLOT="0"
 LICENSE="LGPL-3"
-IUSE="doc gtk3 introspection"
+IUSE="doc +gtk3 +introspection"
 
 DEPEND="
 	>=dev-lang/vala-0.11.7
@@ -45,6 +45,7 @@ src_configure() {
 
 	local myeconfargs=(
 		$(use_with !gtk3 gtk 2)
+      $(use_with gtk3 gtk 3)
 		$(use_enable doc gtk-doc)
 		$(use_enable introspection)
 	)
